@@ -5,10 +5,10 @@ while (True):
     penny = 1
     coins = 0
     changeInput = input("Change owed: ")
-    inputCheck = changeInput.strip(".")
+    inputCheck = changeInput.replace('.', '')
     if inputCheck.isnumeric():
-        usrInput = changeInput.strip("$")
-        floatInput = float(usrInput)
+        #usrInput = changeInput.replace('$', '')
+        floatInput = float(inputCheck)
         if floatInput > 0.00:
             cents = int(floatInput * 100)
             while(cents >= 25):

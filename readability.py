@@ -16,18 +16,16 @@ def countLetters(text):
         if (character.isalpha()):
             count += 1
     return count
-    #do something to count letters
-    #this function should return how many letters are in the text
-
 #this defines the fuction that will count words in whatever string it receives
 def countWords(text):
-    #do something to count words
-    #this function should return how many words are in the text
-
+    count = 0
+    for character in text:
+        if(character == " "):
+            count += 1
+    return count
 #this defines the function that will count sentences in whatever string it receives
 def countSentences(text):
-    #do something to count sentences
-    #this function should return how many words are in the text
+    
 
 
 #run the input function and save the input into

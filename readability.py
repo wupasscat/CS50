@@ -24,8 +24,8 @@ def countWords(text):
             count += 1
     return count
 #this defines the function that will count sentences in whatever string it receives
-def countSentences(text):
-    
+#def countSentences(text):
+
 
 
 #run the input function and save the input into

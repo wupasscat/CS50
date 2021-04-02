@@ -1,16 +1,17 @@
 while (True):
-    quarter = 25
-    dime = 0
-    nickel = 5
-    penny = 1
     coins = 0
     changeInput = input("Change owed: ")
     inputCheck = changeInput.replace('.', '')
+    inputCheck = inputCheck.replace('$', '')
+    changeInput = changeInput.replace('$', '')
+    print("input: ", changeInput)
+    print("strip: ", inputCheck)
     if inputCheck.isnumeric():
-        #usrInput = changeInput.replace('$', '')
-        floatInput = float(inputCheck)
+        floatInput = float(changeInput)
+        print("floatinput: ", floatInput)
         if floatInput > 0.00:
             cents = int(floatInput * 100)
+            print("cents: ", cents)
             while(cents >= 25):
                 cents -= 25
                 coins += 1
